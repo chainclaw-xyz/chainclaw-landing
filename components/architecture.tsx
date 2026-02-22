@@ -45,7 +45,7 @@ export function Architecture() {
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-          <StatCard value={stats.tests} label="Tests passing" />
+          <StatCard value={stats.safetyChecks} label="Safety checks per tx" />
           <StatCard value={stats.packages} label="Packages" />
           <StatCard value={stats.skills} label="Built-in skills" />
           <StatCard value={chains.length} label="Chains supported" />

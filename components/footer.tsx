@@ -22,14 +22,9 @@ export function Footer() {
           >
             <GithubIcon size={18} />
           </a>
-          <a
-            href="https://github.com/chainclaw-xyz/chainclaw/blob/main/LICENSE"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs text-neutral-400 hover:text-neutral-700 transition-colors"
-          >
-            MIT License
-          </a>
+          <span className="text-xs text-neutral-400">
+            &copy; 2026 ChainClaw. All rights reserved.
+          </span>
         </div>
       </div>
     </footer>

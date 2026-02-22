@@ -34,7 +34,7 @@ export function UseCases() {
                 {uc.description}
               </p>
 
-              <div className="bg-neutral-950 rounded-lg p-4 font-mono text-xs leading-relaxed text-neutral-400 overflow-x-auto whitespace-pre">
+              <div className="bg-neutral-950 rounded-lg p-4 font-mono text-xs leading-relaxed text-neutral-400 overflow-x-auto whitespace-pre min-h-[160px]">
                 {uc.terminal}
               </div>
             </Card>

@@ -258,8 +258,7 @@ export const chains = [
 ];
 
 export const stats = {
-  tests: 377,
-  testFiles: 56,
+  safetyChecks: 7,
   packages: 11,
   skills: 12,
   chains: 5,
