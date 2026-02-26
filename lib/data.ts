@@ -42,6 +42,12 @@ export const features = [
     icon: "lock",
   },
   {
+    title: "ZK Privacy Layer",
+    description:
+      "Zero-knowledge proof shielded transactions. Deposit, hold, and withdraw tokens with full sender-receiver unlinkability across supported chains.",
+    icon: "lock",
+  },
+  {
     title: "Full Audit Trail",
     description:
       "Every transaction logged with complete lifecycle tracking. Status progression from pending through simulation, approval, broadcast, to confirmation.",
@@ -247,6 +253,14 @@ export const skills: Skill[] = [
     category: "signals",
     icon: "signal",
   },
+  {
+    name: "privacy",
+    title: "Private Transfers",
+    description:
+      "ZK-shielded deposits, withdrawals, and balance checks. Break the on-chain link between sender and receiver with zero-knowledge proofs.",
+    category: "safety",
+    icon: "shield_zk",
+  },
 ];
 
 export const skillCategories: { key: SkillCategory; label: string }[] = [
@@ -367,6 +381,6 @@ export const chains = [
 export const stats = {
   safetyChecks: 10,
   packages: 12,
-  skills: 22,
+  skills: 23,
   chains: 15,
 };

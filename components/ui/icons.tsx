@@ -118,6 +118,7 @@ const skillIcons: Record<string, string> = {
   trending: "\u2197",
   trophy: "\u2655",
   signal: "\u2631",
+  shield_zk: "\u229E",
 };
 
 export function SkillIcon({ icon }: { icon: string }) {
