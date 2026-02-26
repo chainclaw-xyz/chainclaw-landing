@@ -108,6 +108,16 @@ const skillIcons: Record<string, string> = {
   scan: "\u25CE",
   flask: "\u25C7",
   bot: "\u25C9",
+  store: "\u229A",
+  yield: "\u2234",
+  target: "\u25C8",
+  whale: "\u2261",
+  crosshair: "\u2316",
+  gift: "\u2606",
+  balance: "\u2696",
+  trending: "\u2197",
+  trophy: "\u2655",
+  signal: "\u2631",
 };
 
 export function SkillIcon({ icon }: { icon: string }) {

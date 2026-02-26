@@ -16,7 +16,7 @@ export function Skills() {
       <div className="max-w-6xl mx-auto">
         <div className="max-w-2xl mb-10">
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-neutral-900">
-            12 Skills, One Agent
+            22 Skills, One Agent
           </h2>
           <p className="mt-4 text-lg text-neutral-500">
             From simple balance checks to multi-step DeFi workflows. Every skill

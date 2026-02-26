@@ -16,7 +16,7 @@ export function Hero() {
         </h1>
 
         <p className="mt-6 text-lg sm:text-xl text-neutral-500 max-w-xl mx-auto leading-relaxed">
-          Natural language commands. Transaction safety built in. 5 chains, 12
+          Natural language commands. Transaction safety built in. 15 chains, 22
           skills, zero trust required.
         </p>
 

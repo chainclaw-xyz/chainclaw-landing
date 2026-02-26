@@ -30,6 +30,18 @@ export const features = [
     icon: "key",
   },
   {
+    title: "Contract Audit",
+    description:
+      "On-the-fly contract audit before every interaction. LP lock verification, ownership analysis, and anti-rug simulation.",
+    icon: "shield",
+  },
+  {
+    title: "Position Locking",
+    description:
+      "Concurrent position locks prevent double-execution and race conditions. Atomic operations across all channels and skills.",
+    icon: "lock",
+  },
+  {
     title: "Full Audit Trail",
     description:
       "Every transaction logged with complete lifecycle tracking. Status progression from pending through simulation, approval, broadcast, to confirmation.",
@@ -42,7 +54,9 @@ export type SkillCategory =
   | "trading"
   | "portfolio"
   | "automation"
-  | "analysis";
+  | "analysis"
+  | "safety"
+  | "signals";
 
 export interface Skill {
   name: string;
@@ -153,6 +167,86 @@ export const skills: Skill[] = [
     category: "analysis",
     icon: "bot",
   },
+  {
+    name: "marketplace",
+    title: "Marketplace",
+    description:
+      "Browse and install community skills. Discover new strategies, share your own, and extend your agent.",
+    category: "analysis",
+    icon: "store",
+  },
+  {
+    name: "yield_finder",
+    title: "Yield Finder",
+    description:
+      "Find the best yields across DeFi protocols. 4-pillar scoring (yield, safety, liquidity, sustainability) with scam filtering.",
+    category: "trading",
+    icon: "yield",
+  },
+  {
+    name: "limit_order",
+    title: "Limit Order",
+    description:
+      "Place limit buy/sell orders that execute automatically when price targets are hit. No CEX needed.",
+    category: "trading",
+    icon: "target",
+  },
+  {
+    name: "whale_watch",
+    title: "Whale Watch",
+    description:
+      "Track whale wallets in real-time with flow analysis. Get alerts on large movements and accumulation signals.",
+    category: "signals",
+    icon: "whale",
+  },
+  {
+    name: "snipe",
+    title: "Snipe",
+    description:
+      "Auto-snipe new token launches with contract audit, anti-rug simulation, and auto-sell protection.",
+    category: "trading",
+    icon: "crosshair",
+  },
+  {
+    name: "airdrop_tracker",
+    title: "Airdrop Tracker",
+    description:
+      "Track airdrop eligibility across protocols. Never miss a claim window with automated notifications.",
+    category: "portfolio",
+    icon: "gift",
+  },
+  {
+    name: "rebalance",
+    title: "Rebalance",
+    description:
+      "Set target allocations and auto-rebalance your portfolio. Drift detection with configurable thresholds.",
+    category: "portfolio",
+    icon: "balance",
+  },
+  {
+    name: "trailing_stop",
+    title: "Trailing Stop",
+    description:
+      "Protect profits with tier-based trailing stops. Auto-ratcheting floor price that rises with the market.",
+    category: "safety",
+    icon: "trending",
+  },
+  {
+    name: "performance",
+    title: "Performance Review",
+    description:
+      "HOWL scoring system — win rate, PnL, fee drag, risk-adjusted returns. Full per-chain breakdown.",
+    category: "analysis",
+    icon: "trophy",
+  },
+  {
+    name: "trading_signals",
+    title: "Trading Signals",
+    description:
+      "TX-verified signal publish/subscribe with leaderboard. Follow top traders with on-chain proof.",
+    category: "signals",
+    icon: "signal",
+  },
 ];
 
 export const skillCategories: { key: SkillCategory; label: string }[] = [
@@ -161,6 +255,8 @@ export const skillCategories: { key: SkillCategory; label: string }[] = [
   { key: "portfolio", label: "Portfolio" },
   { key: "automation", label: "Automation" },
   { key: "analysis", label: "Analysis" },
+  { key: "safety", label: "Safety" },
+  { key: "signals", label: "Signals" },
 ];
 
 export const useCases = [
@@ -196,11 +292,12 @@ export const useCases = [
     name: "Priya",
     role: "The Portfolio Manager",
     description:
-      "Multi-wallet oversight, lending positions, portfolio tracking across 5 chains with alerts.",
+      "Multi-wallet oversight, lending positions, portfolio tracking across 15 chains with alerts.",
     terminal: `> Show my portfolio
   Ethereum:  $12,400 (3.2 ETH, 5K USDC)
   Base:      $3,200  (1.1 ETH, 800 USDC)
   Arbitrum:  $1,800  (ARB, USDC)
+  +12 more chains...
   Total:     $17,400
 
 > Check my Aave position
@@ -254,12 +351,22 @@ export const chains = [
   { name: "Base", id: 8453 },
   { name: "Arbitrum", id: 42161 },
   { name: "Optimism", id: 10 },
+  { name: "Polygon", id: 137 },
+  { name: "BNB Chain", id: 56 },
+  { name: "Avalanche", id: 43114 },
+  { name: "zkSync Era", id: 324 },
+  { name: "Scroll", id: 534352 },
+  { name: "Blast", id: 81457 },
+  { name: "Gnosis", id: 100 },
+  { name: "Linea", id: 59144 },
+  { name: "Fantom", id: 250 },
+  { name: "Mantle", id: 5000 },
   { name: "Solana", id: 900 },
 ];
 
 export const stats = {
-  safetyChecks: 7,
-  packages: 11,
-  skills: 12,
-  chains: 5,
+  safetyChecks: 10,
+  packages: 12,
+  skills: 22,
+  chains: 15,
 };

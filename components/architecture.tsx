@@ -6,7 +6,7 @@ export function Architecture() {
       <div className="max-w-6xl mx-auto">
         <div className="max-w-2xl mb-14">
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-neutral-900">
-            11 Packages, One Pipeline
+            12 Packages, One Pipeline
           </h2>
           <p className="mt-4 text-lg text-neutral-500">
             Clean monorepo architecture. Every package builds independently,
@@ -38,9 +38,10 @@ export function Architecture() {
             </div>
           </div>
           <div className="text-neutral-600 mt-4 text-xs">
-            executor &rarr; simulator &rarr; risk engine &rarr; guardrails
-            &rarr; nonce manager &rarr; signer &rarr; broadcast &rarr;
-            confirm
+            executor &rarr; simulator &rarr; risk engine &rarr; contract
+            audit &rarr; guardrails &rarr; position lock &rarr; nonce
+            manager &rarr; MEV protect &rarr; gas optimizer &rarr;
+            broadcast &rarr; confirm
           </div>
         </div>
 
