@@ -11,17 +11,19 @@ export function DemoVideo() {
           </p>
         </div>
 
-        <div className="relative rounded-2xl overflow-hidden bg-neutral-950 shadow-2xl ring-1 ring-neutral-200">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="w-full block"
-            poster=""
-          >
-            <source src="/demo.mp4" type="video/mp4" />
-          </video>
+        <div className="relative rounded-2xl overflow-hidden bg-neutral-950 shadow-2xl ring-1 ring-neutral-200 -mx-6 sm:mx-0">
+          <div className="overflow-x-auto">
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="block min-w-[640px] w-full"
+              poster=""
+            >
+              <source src="/demo.mp4" type="video/mp4" />
+            </video>
+          </div>
         </div>
 
         <p className="mt-4 text-center text-xs text-neutral-400">
