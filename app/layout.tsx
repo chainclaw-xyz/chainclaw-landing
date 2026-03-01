@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -26,6 +27,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.className}>
+      <head>
+        <Script
+          defer
+          src="https://analytics.moltmetrics.xyz/script.js"
+          data-website-id="e5de756a-5b9b-45ef-bc9b-49284862a8a8"
+        />
+      </head>
       <body className="bg-white text-neutral-900">{children}</body>
     </html>
   );
